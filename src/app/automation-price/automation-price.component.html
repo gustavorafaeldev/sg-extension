@@ -1,0 +1,20 @@
+<div *ngIf="spinner" class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="text-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Carregando...</span>
+    </div>
+    <h4 class="mt-3">Carregando...</h4>
+    <p>Estamos atualizando os preços deste produto</p>
+    <p>Isso pode levar alguns minutos</p>
+  </div>
+</div>
+
+
+
+<div *ngIf="!spinner" class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="text-center">
+    <h2 class="mb-4">Deseja realmente atualizar o preço do produto?</h2>
+    <button class="btn btn-primary" (click)="request()">Confirmar</button>
+  </div>
+</div>
+

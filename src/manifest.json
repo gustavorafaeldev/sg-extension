@@ -1,0 +1,22 @@
+{
+  "name": "Vipagi",
+  "version": "3.0",
+  "description": "Extensão Sg Cloud Vipagi",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "assets/icon.png",
+      "48": "assets/icon.png",
+      "128": "assets/icon.png"
+    }
+  }
+}
